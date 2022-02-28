@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- povezujemo css sa html -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- u sledecim linkovima se nalaze fontovi koje cemo koristiti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- pravimo div left za levu stranu -->
+    <div class="left">
+      <!-- definisemo div sa Head gde ubacujemo logo i odvajaga od Main -->
+      <div class="header">
+        <!-- logo -->
+        <img src="./logo1.png" alt="Logo" class="logo" />
+      </div>
+      <!-- Main div koji je odvojen od Hedera -->
+      <div class="main">
+        <!-- form je za formu i u nju ubacujemo sve ostale podatke -->
+        <div class="form form-login">
+          <!-- heading -->
+          <h1 class="heading">Welcome back!</h1>
+          <!-- subheading za teskst ispod heda -->
+          <h2 class="subheading">Login or Sing Up</h2>
+          <!-- 2 inputa za ubacivanje forme -->
+          <input type="text" placeholder="Email" />
+          <!-- tip dodajemo password da se ne bi videla -->
+          <input type="password" placeholder="Password" />
+          <!-- dodeljujemo klasu divu buttons za upravljanje dugmicima -->
+          <div class="buttons">
+            <!-- podelimo ih na sec i prim, sec btns imaju iste spec 
+            dok prim. ima sasvim drugacije pa ih zato odvajamo -->
+            <button id="to-register" class="btn-secondary">Register</button>
+            <button class="btn-secondary">Forgot password?</button>
+            <button class="btn-primary">Login</button>
+          </div>
+        </div>
+
+        <div class="form form-register">
+          <h1 class="heading">Welcome!</h1>
+
+          <h2 class="subheading">Login or Sing Up</h2>
+
+          <input type="text" placeholder="username" />
+
+          <input type="text" placeholder="email" />
+
+          <input type="password" placeholder="Password" />
+
+          <input type="password" placeholder="RE-Enter password" />
+
+          <div class="buttons">
+            <button id="to-login" class="btn-secondary">Login</button>
+            <button class="btn-secondary">Forgot password?</button>
+            <button class="btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div za desnu stranu -->
+    <div class="right">
+      <!-- dodajemo div za slajdere -->
+      <div class="slider">
+        <!-- delimo ih u 2 diva -->
+        <div class="line line-active"></div>
+        <div class="line"></div>
+      </div>
+      <h2 class="heading">Lorem ipsum</h2>
+      <h3 class="subheading">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </h3>
+      <div class="play">
+        <img src="./play.png" alt="play button" class="triangle" />
+      </div>
+    </div>
+    <!-- u js koristimo sve elemente gore
+      navedene zato ne ide u head nego pred
+      kraj body da ne bi izbacilo gresku -->
+    <script src="./index.js"></script>
+  </body>
+</html>

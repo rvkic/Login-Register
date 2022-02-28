@@ -1,0 +1,175 @@
+/* zvezdica se odnosi na sve i njom smo eliminisali defult setings za sajt na hromu */
+/* inherit znaci da sva deca nasledjuju roditeljski font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  /* border: 0.5px solid gray; */
+}
+
+/* display flex smo koristili za odvajanje leve i desne strane, 
+zatim dodajemo font family preuzet sa google fonta i 
+stavljamo ga u body da bi ga primenili header i subheader */
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* parametri za levu stranu  */
+.left {
+  width: 693px;
+  height: 100%px;
+  /* float: left; */
+}
+
+.header {
+  height: 10%;
+  width: 100%;
+}
+
+.logo {
+  width: 128px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* main sadrzi parametre za centriranje forme */
+
+.main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-register {
+  display: none;
+}
+
+.form-login,
+.form-register {
+  width: 384px;
+  height: 389px;
+  position: relative;
+  bottom: 60px;
+}
+
+/* RGB(A) a je za transparentnos  */
+
+.form .heading {
+  margin: 15px;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: rgba(112, 112, 112 0.7);
+}
+
+.form .subheading {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(112, 112, 112 0.7);
+  transform: translateX(80px);
+}
+
+input {
+  width: 100%;
+  margin-bottom: 25px;
+  display: block;
+  border: 1px solid rgba(112, 112, 112 0.6);
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 11px;
+  font-weight: 100;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  border: none;
+  font-size: 15px;
+  color: rgba(112, 112, 112 0.5);
+}
+
+.btn-primary {
+  font-size: 20px;
+  background-color: rgb(175, 186, 195);
+  padding: 10px 25px;
+  border-radius: 15px;
+}
+
+/* definisanje desne strane */
+.right {
+  width: 1225px;
+  height: 100%;
+  background-image: url(bg.1.jpg);
+  background-size: cover;
+  background-position: 50%;
+  /* float: right; */
+}
+
+/* slideri male bele linije u gorenjem levom uglu */
+.slider {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.line {
+  height: 2px;
+  width: 50px;
+  background-color: rgb(247, 247, 247);
+}
+
+/* vec postoji heading pa koristimo roditelja div da tacno 
+odredimo koji heading */
+.right .heading {
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 100px;
+  margin-left: 100px;
+  letter-spacing: 0.2px;
+  color: rgb(247, 247, 247);
+}
+
+/* takodje i ovde ali samo za sub.heading */
+.right .subheading {
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 1.6;
+  color: rgb(247, 247, 247);
+}
+
+/* dugme play koje je kvadrat ali zbog
+radiusa 50% koji se koristi da uvek bude krug */
+.play {
+  height: 93px;
+  width: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 160px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 50%;
+}
+
+/* triangl koji smo skinuli i pozicionurali u centar */
+.triangle {
+  position: relative;
+  left: 5px;
+}
